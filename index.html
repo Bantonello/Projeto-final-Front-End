@@ -9,6 +9,7 @@
     />
 
     <!--CSS-->
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
     <title>Projeto Final Front-End</title>
@@ -250,15 +251,15 @@
         </h4>
 
         <div class="button-group pt-5">
-          <button type="button" class="active">Todos</button>
-          <button type="button">Celular/tablet</button>
-          <button type="button">Notebook/PC</button>
-          <button type="button">Video games</button>
-          <button type="button">acessórios</button>
+          <button type="button" class="active" data-filter="*">Todos</button>
+          <button type="button" data-filter=".celular-tablet">Celular/tablet</button>
+          <button type="button" data-filter=".notebook-pc">Notebook/PC</button>
+          <button type="button" data-filter=".games">Video games</button>
+          <button type="button" data-filter=".acessorios">Acessórios</button>
         </div>
 
         
-        <div class="row pt-5">
+        <div class="row grid pt-5">
 
           <div class="col-lg-4 element-item celular-tablet">
             <a href="Assets/SERVIÇOS/manutencaosmartphone.jpg" class="popup-link">
@@ -330,7 +331,7 @@
             </p>
           </div>
 
-          <div class="col-lg-4 element-item pc-gamer">
+          <div class="col-lg-4 element-item games">
             <a href="Assets/SERVIÇOS/PCGAMER.jpg" class="popup-link">
               <img src="Assets/SERVIÇOS/PCGAMER.jpg" class="img-fluid mb-2">
             </a>
@@ -369,8 +370,9 @@
       crossorigin="anonymous"
     ></script>   
     <script src="js/bootstrap.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
