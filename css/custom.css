@@ -166,6 +166,8 @@ body,html {
 }
 
 #servicos .element-item img {
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
   transition: all ease-out 0.2s;
 }
@@ -194,5 +196,56 @@ body,html {
 
 #servicos .button-group button.active {
   color: var(--primary);
+}
+
+
+
+#depoimentos a.destaque {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#depoimentos a.destaque:hover{
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+  transform: scale(1.0);
+}
+
+#contato .email {
+  border-radius: 5px;
+  background-color:rgb(143, 18, 18);
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contato .email img{
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contato .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contato .email .form-control
+#contato .email .form-control::placeholder {
+  background: none;
+  color:#fff
+
 }
 

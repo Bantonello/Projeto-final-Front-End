@@ -22,16 +22,15 @@ jQuery(document).ready(function ($) {
  });
  });
 
-$(window).on("load", function() {
+ $(window).on("load", function() {
   $("#servicos .grid").isotope({
     filter: "*",
    });
+ });
 
-});
+ //magnify
 
-//magnify
-
-$(".grid .popup-link").magnificPopup({
+ $(".grid .popup-link").magnificPopup({
   type: "image", 
   gallery: {
     enabled: true,
@@ -39,6 +38,6 @@ $(".grid .popup-link").magnificPopup({
     tNext: "Póxima",
     tCounter: "%curr% de %total%",
   },
-})
+ });
 
-})
+});
