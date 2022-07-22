@@ -18,7 +18,7 @@
   <body>
     <!--header-->
     <div id="header">
-      <div>
+      <div class="container">
         <nav
           class="navbar navbar-expand-lg navbar-light justify-content-between">
           <a class="navbar-brand" href="#">
@@ -33,7 +33,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -46,13 +46,16 @@
                 <a class="nav-link" href="#">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Serviços</a>
+                <a class="nav-link" href="#servicos">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfólio</a>
+                <a class="nav-link" href="#clientes">Portfólio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contato.html">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orcamento.html">Orçamento</a>
               </li>
             </ul>
           </div>
@@ -128,7 +131,7 @@
       </div>
       <div class="row pt-5">
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <a href="#" class="destaque">
+          <a name="servicos" class="destaque">
             <div class="img-container m3">
               <img src="Assets/celular.jpg" class="img-fluid"/>
             </div>
@@ -244,11 +247,12 @@
     <!--//Clientes-->
     <!--servicos2-->
     <div id="servicos" class="block">
-      <div class="container">
+      <div class="container"> 
+        <a name="clientes"></a>             
         <h2 class="title text-center">Serviços Recentes</h2>
         <h4 class="subtitle text-center">
         Temos orgulho em oferecer excelência em nossos atendimentos e soluções.
-        </h4>
+        </h4>       
 
         <div class="button-group pt-5">
           <button type="button" class="active" data-filter="*">Todos</button>
@@ -256,7 +260,7 @@
           <button type="button" data-filter=".notebook-pc">Notebook/PC</button>
           <button type="button" data-filter=".games">Video games</button>
           <button type="button" data-filter=".acessorios">Acessórios</button>
-        </div>
+        </div>     
 
         
         <div class="row grid pt-5">
@@ -426,31 +430,61 @@
     </div>
     <!--//depoimentos-->
 
-    <!--footer-->
-    <footer id="contato">
-      <div class="container">
-        <div class="email">
-          <img src="">
-          <h2 class="title text-center">Fique por dentro das novidades</h2>
-          <h4 class="subtitle text-center mb-4">Toda semana um cupom diferente com desconto para você.</h4>
-          <form>
-
-            <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
-              <label for="email" class="sr-only">E-mail</label>
-              <input type="email" class="form-control w-100" id="email_input" placeholder="Informe seu e-mail">
+       <!--FOOTER-->
+       <footer id="contato">
+        <div class="container">
+          <div class="email">
+             <a name="contato"></a>
+            <h2 class="title text-center">Fique por dentro das novidades</h2>
+            <h4 class="subtitle text-center mb-4">
+              Toda semana um cupom diferente com desconto para você.
+            </h4>           
+            <form>
+              <div class="form flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
+                <label for="email">E-mail:</label><br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-container form-control w-100"
+                  placeholder="Ex. nome@provedor.com.br"
+                  required
+                />                
+                <div class="form-botao1">
+                  <input type="submit" class="form-botao1" value="Enviar" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="logo py-4">
+            <div class="row">
+              <div class="col-md-6 align-self-center text-md-left text-center">
+                <img src="" class="img-fluid" />
+              </div>
+              <div class="col-md-6 align-self-center text-right">
+                <ul>
+                  <li>
+                    <a href="#"><img src="assets/sociais/facebook.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/sociais/twitter.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/sociais/instagram.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/sociais/linkedin.svg" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="assets/sociais/youtube.svg" /></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-
-            <div class="cadastro flex-grow-1 flex-md-grow-0">
-              <button type="submit" class="btn btn-light button mb-3 d-md-inline d-block w-100">
-                Cadastre-se
-              </button>
-            </div>
-
-          </form>
+          </div>
         </div>
-      </div>
-    </footer>
-    <!--//footer-->
+      </footer>
+      <!--//FOOTER-->
 
 
 

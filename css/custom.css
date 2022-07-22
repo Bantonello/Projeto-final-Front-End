@@ -12,6 +12,11 @@ body,html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: url(../Assets/footer-bg.png) no-repeat center bottom;
+  padding-bottom: 200px;
+}
+
 .logo{
   width: 200px;
   height: 100px;
@@ -221,7 +226,7 @@ body,html {
 
 #contato .email {
   border-radius: 5px;
-  background-color:rgb(143, 18, 18);
+  background-color: var(--secondary);
   color: #fff;
   position: relative;
   display: flex;
@@ -231,7 +236,7 @@ body,html {
   padding: 120px 30px;
 }
 
-#contato .email img{
+#contato .email img {
   position: absolute;
   left: 30px;
   top: -30px;
@@ -242,10 +247,59 @@ body,html {
   display: flex;
 }
 
-#contato .email .form-control
+#contato .email .form-control,
 #contato .email .form-control::placeholder {
   background: none;
-  color:#fff
-
+  color:#ffff;
 }
 
+#contato .form-botao1 {
+  text-align: center;
+  padding: 5px;
+  margin: 5px auto 5px auto;
+  width: 40%;
+  border-radius: 10px;
+  background-color:var(--dark);
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+#contato ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child {
+  margin-left: 0;
+}
+
+#contato ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: black;
+}
+
+#contato ul li img {
+  max-height: 20px;
+}

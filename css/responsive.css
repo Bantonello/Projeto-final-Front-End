@@ -27,4 +27,17 @@
   #clientes .cliente-texto .imagem img {
     max-width: 150px;
   }
+
+  #contato .email {
+    padding: 60px 30px 50px 30px;
+  }
+  #contato .email form {
+    width: 100%;
+    flex-direction: column;
+  }
+  #contato ul {
+    padding-top: 30px;
+    justify-content: center;
+  }
 }
+
