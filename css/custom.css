@@ -54,6 +54,11 @@ body {
   color: var(--secondary)
 }
 
+#sobre .setup {
+  width: 500px;
+  height: 600px;
+}
+
 #slider{
   background-size: contain;
   padding-top: 120px;
@@ -68,6 +73,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
 }
+
 
 #servicos a.destaque {
   display: block;
